@@ -82,7 +82,7 @@ Notes:
   <body>
     <div id="app">
       <header class="topbar">
-        <div class="brand">MySite</div>
+        <div class="brand">Diggaj Niraula</div>
         <nav class="nav">
           <a href="#home">Home</a>
           <a href="#about">About</a>
@@ -98,8 +98,8 @@ Notes:
         <div class="container">
           <div class="intro">
             <div class="eyebrow">Welcome</div>
-            <h1>Hello — I'm <span class="typed" id="typed">a creator</span></h1>
-            <p class="lead">This is a simple interactive landing page. Replace text and image to match your style. Explore the projects and contact me with the button on the right.</p>
+            <h1>Hello — I am Diggaj Niraula</h1>
+            <p class="lead">I am a Mechanical Engineer. This is my personal website where I showcase projects, skills, and ways to contact me. Feel free to explore and get in touch.</p>
 
             <div class="cta-row">
               <button class="btn btn-primary" id="hireBtn">Hire / Contact</button>
@@ -151,7 +151,7 @@ Notes:
       </section>
 
       <footer>
-        © <span id="year"></span> — Built with ❤️
+        © <span id="year"></span> — Diggaj Niraula
       </footer>
 
       <!-- Modal -->
@@ -177,16 +177,8 @@ Notes:
 
     <script>
       // small utilities
-      const typedEl = document.getElementById('typed');
-      const words = ['a creator', 'a designer', 'a problem solver', 'your next collaborator'];
-      let idx = 0, cpos = 0, forward = true;
-      function tick(){
-        const w = words[idx];
-        if(forward){ cpos++; if(cpos>=w.length){ forward=false; setTimeout(tick,800); return; }} else { cpos--; if(cpos<=0){ forward=true; idx=(idx+1)%words.length; }}
-        typedEl.textContent = w.slice(0,cpos);
-        setTimeout(tick, forward?90:45);
-      }
-      tick();
+      // Static name — removed typewriter effect to keep the page simple and personal.
+      // No dynamic typing required.
 
       // subtle zoom on background
       const bg = document.getElementById('bgImg');
@@ -206,7 +198,7 @@ Notes:
       // fake submit
       document.getElementById('contactForm').addEventListener('submit', (e)=>{
         e.preventDefault();
-        alert('Thank you! This demo does not send email. Copy the HTML and connect to your backend or form service.');
+        alert('Message received. Configure a backend or form service to collect submissions.');
         modal.style.display='none';
       });
 
