@@ -6,10 +6,12 @@
   <meta name="theme-color" content="#fbe8ec">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="description" content="A little pink birthday surprise">
+  <meta name="description" content="Something special is waiting. Tap to reveal it.">
+  <meta property="og:title" content="A Little Surprise ✨">
+  <meta property="og:description" content="Something special is waiting. Tap to reveal it.">
   
   
-  <title>Happy Birthday, Barsa!</title>
+  <title>A Little Surprise ✨</title>
   <style>
 :root{--bg:#fff9f8;--blush:#f9dfe8;--rose:#c46c87;--deep:#663345;--wine:#71394e;--ink:#59404a;--muted:#916f7b;--light:#fffdfa;--peach:#f7c6bc;--gold:#c49a68;--border:#eac9d2;--serif:Georgia,'Times New Roman',serif;--sans:'Trebuchet MS',Avenir,'Segoe UI',sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);overflow-x:hidden;-webkit-tap-highlight-color:transparent}body.locked{overflow:hidden}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}[hidden]{display:none!important}button:focus-visible,a:focus-visible,.gallery-stage:focus-visible{outline:3px solid #d35e89;outline-offset:5px}.container{width:min(1180px,calc(100% - 74px));margin:0 auto}.section-wrap{padding:114px 0}.eyebrow{font-size:11px;letter-spacing:.24em;line-height:1.5;font-weight:800;color:var(--rose)}h1,h2,h3,p{margin-top:0}h2{font-family:var(--serif);font-size:clamp(36px,4.55vw,64px);font-weight:500;letter-spacing:-.054em;line-height:1.12;color:var(--deep)}h2 em{font-weight:400;color:var(--rose)}.button{display:inline-flex;gap:24px;justify-content:center;align-items:center;min-height:52px;padding:13px 24px;border:1px solid transparent;border-radius:6px;font-size:12px;font-weight:800;letter-spacing:.035em;transition:transform .2s,background .2s,box-shadow .2s}.button:hover{transform:translateY(-3px)}.button:active{transform:translateY(0)}.button-dark{background:var(--deep);color:white;box-shadow:0 12px 30px rgba(90,41,60,.14)}.button-dark:hover{background:#8b4c63}.button-light{border-color:#e5bdc9;color:var(--deep);background:rgba(255,255,255,.58)}.button-light:hover{background:#fff}.small-star{color:#c79b66;padding:0 4px}.site-glow{position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse 60% 45% at 8% 19%,#ffe7ea 0%,transparent 87%),radial-gradient(ellipse 55% 50% at 98% 4%,#fbeced 0%,transparent 88%),linear-gradient(180deg,#fff9f8 0%,#fffdfb 100%)}.sparkle-field{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0;color:var(--rose)}.sparkle-field span{position:absolute;animation:floaty 9s ease-in-out infinite;opacity:.37;font-size:19px}.sparkle-field span:nth-child(1){top:10%;left:5%}.sparkle-field span:nth-child(2){top:25%;left:94%;animation-delay:2s}.sparkle-field span:nth-child(3){top:60%;left:4%;font-size:12px;animation-delay:3s}.sparkle-field span:nth-child(4){top:83%;left:95%;animation-delay:1.3s}.sparkle-field span:nth-child(5){top:49%;left:90%;animation-delay:4.1s}.sparkle-field span:nth-child(6){top:98%;left:16%;animation-delay:5s}.page{position:relative;z-index:1}.header{height:98px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-family:var(--serif);font-size:20px;color:var(--deep);font-style:italic;line-height:.89;white-space:nowrap}.brand span{color:var(--rose);font-style:normal}.brand small{font:700 9px var(--sans);display:block;letter-spacing:.2em;margin-top:8px;color:var(--muted);font-style:normal}.nav{display:flex;align-items:center;gap:37px}.nav a{font-size:12px;color:var(--deep);opacity:.83;transition:opacity .2s}.nav a:hover{opacity:.5}.music-button{font-size:11px;display:flex;gap:9px;align-items:center;color:var(--wine);background:#ffeff2;border:1px solid #efcfd6;padding:10px 13px;border-radius:32px;white-space:nowrap}.music-icon{font-size:16px;line-height:1}.music-button[aria-pressed=true]{background:#f2ccda}
@@ -47,12 +49,12 @@
 
   <div class="welcome-screen" id="welcome" role="dialog" aria-modal="true" aria-labelledby="welcome-title">
     <div class="welcome-flowers" aria-hidden="true">✿ &nbsp; ♡ &nbsp; ✿</div>
-    <p class="eyebrow welcome-eyebrow">A BIRTHDAY CELEBRATION</p>
-    <button class="envelope" type="button" id="envelope" aria-label="Open your birthday card">
-      <span class="envelope-back"></span><span class="envelope-paper">a little birthday note ♡</span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♥</span>
+    <p class="eyebrow welcome-eyebrow">SOMETHING SPECIAL IS WAITING</p>
+    <button class="envelope" type="button" id="envelope" aria-label="Open the surprise envelope">
+      <span class="envelope-back"></span><span class="envelope-paper">a little secret ♡</span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♥</span>
     </button>
-    <h1 id="welcome-title">Happy Birthday,<br><em>Barsa!</em></h1>
-    <p class="welcome-copy">A little birthday surprise is waiting!</p>
+    <h1 id="welcome-title">Psst...<br><em>a little surprise awaits.</em></h1>
+    <p class="welcome-copy">Ready to discover what is inside?</p>
     <button class="button button-dark open-button" type="button" id="open-surprise">Open your surprise <span aria-hidden="true">↗</span></button>
     <p class="mini-label">tap the envelope or button to begin</p>
   </div>
@@ -114,13 +116,13 @@
       <section class="letter-section section-wrap" id="letter"><div class="container letter-container"><div class="letter-intro"><p class="eyebrow">CHAPTER 04 · WORDS FROM THE HEART</p><h2>One last thing,<br><em>birthday girl...</em></h2><p>Birthday wishes and smiles for Barsa.</p><button id="letter-toggle" class="button button-dark" type="button" aria-expanded="false" aria-controls="letter-paper">Read your letter <span>↗</span></button></div><div class="letter-card-shell" id="letter-card-shell"><div class="letter-paper" id="letter-paper" aria-hidden="true"><div class="letter-ornament">♡</div><p class="letter-salutation" id="letter-opening">Dear Barsa,</p><div id="letter-body"></div><p class="letter-ending" id="letter-ending"></p><p class="letter-signature" id="letter-from"></p></div><div class="letter-closed" id="letter-closed"><div class="letter-ribbon"></div><span class="letter-stamp">♥</span><p>birthday wishes for Barsa</p><small>tap “read your letter” to unfold ♡</small></div></div></div></section>
     </main>
 
-    <footer class="footer"><div class="container footer-content"><span class="footer-heart">♡</span><h2>Happy Birthday, <em>Barsa!</em></h2><p id="footer-note">Keep sparkling. The world is brighter with you in it. ♡</p><div class="footer-actions"><button class="button button-light" id="confetti-again" type="button">One more sparkle ✦</button><button class="button button-light" id="share-button" type="button">Share this card ↗</button></div><div class="footer-bottom"><span>HAPPY BIRTHDAY, BARSA!</span><span>✿ ✧ ♡ ✧ ✿</span></div><p class="song-credit">Song: <a href="https://commons.wikimedia.org/wiki/File:Happy_birthday.ogg" target="_blank" rel="noopener noreferrer">Alexander Stephens (arr. Hanns Christian Müller), via Sselmer / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></p></div></footer>
+    <footer class="footer"><div class="container footer-content"><span class="footer-heart">♡</span><h2>Happy Birthday, <em>Barsa!</em></h2><p id="footer-note">Keep sparkling. The world is brighter with you in it. ♡</p><div class="footer-actions"><button class="button button-light" id="confetti-again" type="button">One more sparkle ✦</button><button class="button button-light" id="share-button" type="button">Share this card ↗</button></div><div class="footer-bottom"><span>HAPPY BIRTHDAY, BARSA!</span><span>✿ ✧ ♡ ✧ ✿</span></div><p class="song-credit">Music: <a href="https://commons.wikimedia.org/wiki/File:Backyard_Music_-_Badumm_Badumm_Happy_Birthday_to_ya.ogg" target="_blank" rel="noopener noreferrer">“(Badumm Badumm) Happy Birthday to ya” by Backyard Music / Wikimedia Commons</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a></p></div></footer>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <audio id="birthday-song" preload="auto" loop playsinline aria-label="Happy Birthday song">
-    <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/d/de/Happy_birthday.ogg/Happy_birthday.ogg.mp3" type="audio/mpeg">
-    <source src="https://upload.wikimedia.org/wikipedia/commons/d/de/Happy_birthday.ogg" type="audio/ogg">
+    <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/c/cb/Backyard_Music_-_Badumm_Badumm_Happy_Birthday_to_ya.ogg/Backyard_Music_-_Badumm_Badumm_Happy_Birthday_to_ya.ogg.mp3" type="audio/mpeg">
+    <source src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Backyard_Music_-_Badumm_Badumm_Happy_Birthday_to_ya.ogg" type="audio/ogg">
   </audio>
 <script>
 /*
@@ -152,7 +154,7 @@ window.BIRTHDAY_CONFIG = {"name":"Barsa","heroNote":"Wishing you a beautiful bir
     text('footer-note', data.closing || 'Keep sparkling. The world is brighter with you in it. ♡');
     const body = $('letter-body'); body.replaceChildren();
     (data.letter || ['Wishing you the very happiest birthday.']).forEach(line => {const p=document.createElement('p');p.textContent=line;body.appendChild(p);});
-    document.title=`Happy Birthday, ${data.name || 'Barsa'}!`;
+    document.title='A Little Surprise ✨';
     $('hero-photo-front').src = photos[0].src;
     $('hero-photo-back').src = photos[Math.min(2,photos.length-1)].src;
     $('hero-photo-front').alt = photos[0].title;
@@ -185,6 +187,7 @@ window.BIRTHDAY_CONFIG = {"name":"Barsa","heroNote":"Wishing you a beautiful bir
   function openCard(){
     if(welcomeOpened) return;
     welcomeOpened=true;
+    document.title=`Happy Birthday, ${data.name || 'Barsa'}!`;
     startBirthdaySong();
     const screen=$('welcome');
     screen.classList.add('opening');
